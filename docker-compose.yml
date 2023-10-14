@@ -1,0 +1,19 @@
+# Criando o container a partir de uma imagem no github
+# version: '3'
+# services:
+#   my-app-node:
+#     build:
+#       context: .
+#       dockerfile: Dockerfile
+#     ports:
+#       - "8080:3000"
+
+# ============================================================
+
+# Criando o container a partir de uma imagem no dockerhub
+version: '3'
+services:
+  my-app-node:
+    image: lucivandosousa/app-node:1.0
+    ports:
+      - "8080:3000"
